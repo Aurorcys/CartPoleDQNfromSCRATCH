@@ -18,7 +18,7 @@ class CartPoleDQN:
         self.r1 = np.maximum(self.z1, 0)
         self.z2 = self.r1 @ self.W2 + self.b2
         self.r2 = np.maximum(self.z2, 0)
-        q_values = self.r2 @ self.W3 + self.b3
+        q_values = self.r2 @ se lf.W3 + self.b3
 
         return q_values
     
